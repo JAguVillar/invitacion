@@ -1,0 +1,57 @@
+/* Clash */
+@font-face {
+	font-family: ClashDisplay-Regular;
+	font-style: normal;
+	src: url(../assets/fonts/ClashDisplay/ClashDisplay-Regular.otf) format("opentype");
+}
+
+@font-face {
+	font-family: ClashDisplay-Bold;
+	font-style: normal;
+	src: url(../assets/fonts/ClashDisplay/ClashDisplay-Bold.otf) format("opentype");
+}
+
+@font-face {
+	font-family: ClashDisplay-Semibold;
+	font-style: normal;
+	src: url(../assets/fonts/ClashDisplay/ClashDisplay-Semibold.otf) format("opentype");
+} 
+/* Archivo */
+@font-face {
+	font-family: Archivo-Regular;
+	font-style: normal;
+	src: url(../assets/fonts/Archivo/Archivo-Regular.otf) format("opentype");
+}
+
+ @font-face {
+	font-family: Archivo-Bold;
+	font-style: normal;
+	src: url(../assets/fonts/Archivo/Archivo-Bold.otf) format("opentype");
+}
+
+@font-face {
+	font-family: Archivo-Semibold;
+	font-style: normal;
+	src: url(../assets/fonts/Archivo/Archivo-SemiBold.otf) format("opentype");
+}  
+
+.clash-regular {
+	font-family: ClashDisplay-Regular;
+}
+.clash.bold {
+	font-family: ClashDisplay-Bold;
+}
+.clash.semibold {
+	font-family: ClashDisplay-Semibold;
+}
+
+.archivo-regular {
+	font-family: Archivo-Regular;
+}
+.archivo.bold {
+	font-family: Archivo-Bold;
+}
+.archivo.semibold {
+	font-family: Archivo-Semibold;
+}
+
