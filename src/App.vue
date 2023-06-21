@@ -17,7 +17,29 @@
       </div>
       <div class="item second">
         <div class="left clash bold">📍 ¿Dónde?</div>
-        <div class="right clash semibold">Mi finca.</div>
+        <div class="right clash semibold">
+          Mi finca.
+          <div class="popover__wrapper">
+            <a href="#">
+              <h2 class="popover__title">¿Cómo llego?</h2>
+            </a>
+            <div class="popover__content">
+              <div class="popover__message">
+                Tienes que hacer una cuadra más de lo que el mapa te indique
+                <!-- <li>Ir por la 51</li>
+                <li>Cuando cruces las vias, la primera a la derecha</li>
+                <li>
+                  Sigues derecho hasta ver ne mano derecha una tranquera y una
+                  garita
+                </li>
+                <li>Doblar a la derecha</li>
+                <li>En la tercera calle doblar a la izquierda</li>
+                <li>Seguir dos cuadras y media</li> -->
+              </div>
+              <img style="width: 128px" src="./assets/qr1687313387985.png" />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="item third">
         <div class="left clash bold">📦 ¿Tengo que llevar algo?</div>
@@ -385,5 +407,60 @@ a:visited {
 
 .wappSvg {
   margin-left: 10px;
+}
+
+.popover__title {
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 15px;
+  font-size: 32px;
+}
+
+.popover__wrapper {
+  position: relative;
+
+  display: inline-block;
+}
+
+.popover__wrapper > a {
+  text-decoration: none;
+}
+
+.popover__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -150px;
+  transform: translate(0, 10px);
+  background-color: #1c1b21;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: auto;
+}
+.popover__content:before {
+  position: absolute;
+  z-index: -1;
+
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #bfbfbf transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+  font-size: 16px;
+  margin: 10px 0px;
+  color: #ff6e6c;
 }
 </style>
