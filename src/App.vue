@@ -5,7 +5,7 @@
     <div class="color3"></div>
     <div class="color4"></div>
     <div class="headerContainer clash bold">
-      <div>!TE INVIT@ A MI</div>
+      <div>!TE INVITO A MI</div>
       <div>CUMPLE!</div>
     </div>
     <div class="footer">
@@ -87,7 +87,7 @@
       <span class="texto2"
         >Haz clic para mandarme un mensaje
         <img
-          src="./assets/whatsapp.svg"
+          src="./assets/Digital_Glyph_White.svg"
           style="width: 32px"
           alt=""
           srcset=""
@@ -163,7 +163,8 @@ export default {
       tl.to(".wapp", { background: "#1c1b21" });
     },
     mandar() {
-      window.open(" https://wa.me/3855048767", "_blank");
+      let texto = "Hola Agoto, ";
+      window.open(" https://wa.me/3855048767?" + texto, "_blank");
     },
   },
 };
@@ -376,11 +377,12 @@ a:visited {
   position: absolute;
   opacity: 0;
   font-size: 36px;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .wappSvg {
   margin-left: 10px;
 }
